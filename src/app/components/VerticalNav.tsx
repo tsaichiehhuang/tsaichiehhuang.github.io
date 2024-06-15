@@ -47,7 +47,7 @@ const VerticalNav = () => {
 
     return (
         <nav
-            className={`hidden md:flex fixed top-1/3 left-2 h-1/2 w-36  flex-col text-xs gap-1 items-start text-gray-700 transition-opacity duration-300 ${
+            className={`hidden lg:flex fixed top-1/3 left-2 h-1/2 w-36  flex-col text-xs gap-1 items-start text-gray-700 transition-opacity duration-300 ${
                 showNav ? 'opacity-100' : 'opacity-0'
             }`}
         >

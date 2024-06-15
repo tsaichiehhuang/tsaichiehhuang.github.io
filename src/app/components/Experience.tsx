@@ -54,12 +54,12 @@ export default function Experience() {
     return (
         <div
             id="experience"
-            className="w-full overflow-x-hidden bg-white scroll-mt-10 flex flex-col items-center justify-center py-20"
+            className="w-full overflow-x-hidden bg-white scroll-mt-20 flex flex-col items-center justify-center py-20"
             data-aos="fade-up"
             data-aos-offset="200"
         >
             <div className="py-16 text-3xl font-bold text-center ">Experience</div>
-            <div className="w-3/4 flex flex-col items-center  md:grid md:grid-flow-row md:grid-cols-4 md:px-48">
+            <div className="px-4 md:px-0 2xl:w-3/4 md:w-3/4 lg:w-full  flex flex-col items-center  md:grid md:grid-flow-row md:grid-cols-4  lg:px-48">
                 {workData.map((item, index) => (
                     <div
                         key={index}

@@ -16,9 +16,9 @@ export default function Portfolio() {
             data-aos-offset="200"
             className="scroll-mt-20 box-content flex flex-col items-center justify-center w-full pb-56"
         >
-            <div className="w-2/3 ">
+            <div className="w-4/5 lg:w-2/3 ">
                 <div className="col-span-1 py-20 text-3xl font-bold text-center md:col-span-3">Portfolio</div>
-                <div className="flex flex-col gap-8  md:px-20 ">
+                <div className="flex flex-col gap-8  2xl:px-20 ">
                     <PortfolioItems
                         title="台鐵e訂通 Redesign"
                         description="透過訪談分析原先APP的訂票流程與使用者的行為期望，選擇優化訂票、付款、取票流程，提升使用APP線上訂車票的體驗。"
@@ -59,19 +59,21 @@ const PortfolioItems = (props: PortfolioItemsProps) => {
     return (
         <div className="overflow-x-hidden">
             <div
-                className="flex flex-row items-center justify-start  bg-white border-b-8 border-black cursor-pointer border-5 hover:shadow-2xl rounded-xl"
+                className="flex flex-col md:flex-row items-center justify-start  bg-white border-b-8 border-black cursor-pointer border-5 hover:shadow-2xl rounded-xl"
                 onClick={() => router.push(props.url)}
             >
-                <Image
-                    src={image}
-                    alt={title}
-                    className="w-1/2 object-cover  border-black rounded-md border-r-5"
-                    width={800}
-                    height={500}
-                    quality={100}
-                    priority
-                />
-                <div className=" text-left px-4 md:px-8 w-1/2 gap-8 flex flex-col">
+                <div className="h-full w-full md:w-1/3 lg:w-1/2 object-cover  ">
+                    <Image
+                        src={image}
+                        alt={title}
+                        className="w-full  object-cover  rounded-md "
+                        width={800}
+                        height={500}
+                        quality={100}
+                        priority
+                    />
+                </div>
+                <div className=" text-left px-4 md:px-8 w-full  md:w-2/3 lg:w-1/2 gap-8 flex flex-col border-black  border-l-5">
                     <div className="pt-4 text-2xl font-bold ">{title}</div>
                     <div className="text-md  leading-6 text-gray-500 ">{description}</div>
                     <div className="flex flex-wrap gap-0.5  items-center justify-start">
@@ -80,7 +82,7 @@ const PortfolioItems = (props: PortfolioItemsProps) => {
                         ))}
                     </div>
                     <Button
-                        className="border-1 bg-white border-gray-500 text-gray-500 text-xs  w-1/4"
+                        className="mb-2 border-1 bg-white border-gray-500 text-gray-500 text-xs  w-1/4"
                         variant="bordered"
                         size="sm"
                         onClick={() => router.push(props.url)}

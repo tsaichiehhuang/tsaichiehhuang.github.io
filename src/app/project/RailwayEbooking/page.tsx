@@ -26,7 +26,7 @@ export default function RailwayEbooking() {
                     className="object-cover w-full h-screen"
                 />
             </div>
-            <div className="hidden md:block w-full 2xl:px-96 md:px-40 mt-20 leading-8">
+            <div className="hidden md:block w-full 2xl:px-96 px-4 xl:px-40 mt-20 leading-8">
                 <div className=" flex flex-row items-start justify-around w-full gap-8 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl">
                     <div className="gap-4 flex flex-col ">
                         <div className="font-bold">類型</div>
@@ -128,7 +128,7 @@ export default function RailwayEbooking() {
             </div>
             <div className="flex flex-col gap-8 2xl:gap-20 py-20 pb-40 leading-8">
                 {/* 總覽 OVERVIEW */}
-                <div id="overview" className="px-4 2xl:px-96 md:px-60 scroll-mt-20">
+                <div id="overview" className="px-4 2xl:px-96 md:px-20 xl:px-60 scroll-mt-20">
                     <div className="m-8 text-3xl font-bold">總覽 OVERVIEW</div>
 
                     <div className="flex flex-col items-start justify-center w-full gap-8 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl">
@@ -151,9 +151,16 @@ export default function RailwayEbooking() {
                         </div>
                         <div id="prototype" className="flex flex-col gap-4 scroll-mt-20">
                             <div className="text-4xl font-bold">原型</div>
+                            <div>*注意* 請使用電腦才能正常觀看</div>
                             <iframe
-                                className="hidden md:block border-black border-1 rounded-xl"
+                                className=" hidden lg:block border-black border-1 rounded-xl"
                                 width="700"
+                                height="500"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbyyCL4uGCkI49fZPBqDHe0%2F%25E4%25BA%25BA%25E6%25A9%259F%25E4%25BA%2592%25E5%258B%2595%25E4%25BD%259C%25E6%25A5%25AD%3Fnode-id%3D239-476%26t%3Di8FHbsRt7GcluNGa-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D22%253A2%26starting-point-node-id%3D239%253A476"
+                            ></iframe>
+                            <iframe
+                                className="lg:hidden md:block border-black border-1 rounded-xl"
+                                width="500"
                                 height="500"
                                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbyyCL4uGCkI49fZPBqDHe0%2F%25E4%25BA%25BA%25E6%25A9%259F%25E4%25BA%2592%25E5%258B%2595%25E4%25BD%259C%25E6%25A5%25AD%3Fnode-id%3D239-476%26t%3Di8FHbsRt7GcluNGa-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D22%253A2%26starting-point-node-id%3D239%253A476"
                             ></iframe>
@@ -167,7 +174,7 @@ export default function RailwayEbooking() {
                     </div>
                 </div>
                 {/* 問題 PROBLEM */}
-                <div id="problems" className="px-4 2xl:px-96 md:px-60 scroll-mt-20">
+                <div id="problems" className="px-4 2xl:px-96  md:px-20 xl:px-60 scroll-mt-20">
                     <div className="m-8 text-3xl font-bold">問題 PROBLEM</div>
 
                     <div className="flex flex-col items-start justify-center w-full gap-4 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl">
@@ -219,9 +226,9 @@ export default function RailwayEbooking() {
                 </div>
                 {/*設計過程 PROCESS*/}
                 <div id="process" className="w-full pt-10 bg-white scroll-mt-20">
-                    <div className="m-8 text-3xl font-bold 2xl:px-96 md:px-60">設計過程 PROCESS</div>
+                    <div className="m-8 text-3xl font-bold 2xl:px-96 md:px-20 xl:px-60">設計過程 PROCESS</div>
 
-                    <div className="flex flex-col items-start justify-center w-full gap-20 p-4 2xl:px-96 md:px-60 ">
+                    <div className="flex flex-col items-start justify-center w-full gap-20 p-4 2xl:px-96  md:px-20 xl:px-60 ">
                         <div
                             id="step1"
                             className="flex flex-col gap-4 scroll-mt-20 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl"
@@ -517,7 +524,7 @@ export default function RailwayEbooking() {
                     </div>
                 </div>
                 {/* 海報論文 POSTER */}
-                <div id="poster" className="px-4 scroll-mt-20 2xl:px-96 md:px-60">
+                <div id="poster" className="px-4 scroll-mt-20 2xl:px-96  md:px-20 xl:px-60">
                     <div className="m-8 text-3xl font-bold">海報論文 POSTER</div>
 
                     <div className="flex flex-col items-start justify-center w-full gap-4 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl">
@@ -533,7 +540,7 @@ export default function RailwayEbooking() {
                     </div>
                 </div>
                 {/* 學習 LEARNING */}
-                <div id="learning" className="px-4 scroll-mt-20 2xl:px-96 md:px-60">
+                <div id="learning" className="px-4 scroll-mt-20 2xl:px-96  md:px-20 xl:px-60">
                     <div className="m-8 text-3xl font-bold">學習 LEARNING</div>
 
                     <div className="flex flex-col items-start justify-center w-full gap-4 p-4 bg-white border-b-8 border-black md:p-10 border-5 rounded-xl">

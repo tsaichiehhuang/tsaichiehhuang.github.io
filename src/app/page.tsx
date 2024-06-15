@@ -8,9 +8,9 @@ const UXPortfolio = dynamic(() => import('@/app/components/UXPortfolio'))
 
 const HomePage: React.FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <>
             <Header />
-            <main className="flex flex-col items-center justify-center gap-40 pb-20 text-center ">
+            <main className="flex flex-col items-center justify-center 2xl:gap-40 pb-20 text-center ">
                 <Banner />
 
                 <AboutMe />
@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
                     <p>&copy; {new Date().getFullYear()} Kelly 黃采婕. All rights reserved.</p>
                 </div>
             </footer>
-        </div>
+        </>
     )
 }
 

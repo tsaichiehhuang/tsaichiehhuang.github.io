@@ -17,8 +17,8 @@ export default function AboutMe() {
             data-aos-offset="200"
             className="scroll-mt-96 2xl:scroll-mt-96 overflow-x-hidden"
         >
-            <div className="flex flex-col items-center justify-center w-full py-8 md:py-40 2xl:py-8 gap-4">
-                <div className="flex flex-col items-center justify-center w-4/5 p-4 bg-white border-b-8 border-black md:flex-row md:w-3/5 2xl:w-2/5 md:p-10 border-5 rounded-xl">
+            <div className=" flex flex-col items-center justify-center w-full py-8 md:py-40 2xl:py-8 gap-4">
+                <div className="flex flex-col items-center justify-center w-4/5 p-4 bg-white border-b-8 border-black md:flex-row lg:w-3/5 2xl:w-2/5 md:p-10 border-5 rounded-xl">
                     <div className="w-3/5 md:w-full">
                         <Image alt="avatar" src="/photo.jpg" width={700} />
                     </div>
