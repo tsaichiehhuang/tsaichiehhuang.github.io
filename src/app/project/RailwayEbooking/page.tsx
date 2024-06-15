@@ -54,7 +54,7 @@ export default function RailwayEbooking() {
                             <li>質性訪談</li>
                             <li>用例分析</li>
                             <li>卡片分類法</li>
-                            <li>任務測試</li>
+                            <li>易用性測試</li>
                         </ul>
                     </div>
                     <Divider orientation="vertical" />
@@ -244,7 +244,7 @@ export default function RailwayEbooking() {
                                 <div>
                                     訪談條件設立為：「搭乘台鐵旅遊/返鄉」、「習慣用App預先訂票」、「習慣線上支付」及「使用電子票券」，以此來了解使用者使用系統時的感受與經驗
                                 </div>
-                                <div>運用受訪者的回饋，描繪出Person以及建立 User Journey Map </div>
+                                <div>運用受訪者的回饋，描繪出Persona以及建立 User Journey Map </div>
                             </div>
                             <div className="flex flex-row gap-1">
                                 <Image
@@ -440,7 +440,7 @@ export default function RailwayEbooking() {
                                 <ul className="ml-6 list-disc gap-2 flex flex-col">
                                     <li>
                                         <div className="font-bold">顏色：</div>
-                                        整理從關鍵字衍伸出的圖片擷取顏色，選用展現出專業俐落的藍色作為主題色，並搭配暖色、有活力的橘色來做為重點提示或是icon，給予使用者不失親和力的具專業感服務
+                                        整理從關鍵字衍伸出的圖片擷取顏色，選用展現出專業俐落的藍色作為主題色，並搭配暖色、有活力的橘色來做為重點提示或是icon，給予使用者不失親和力的專業服務
                                     </li>
                                     <li>
                                         {' '}
