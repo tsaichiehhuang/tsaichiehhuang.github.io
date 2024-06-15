@@ -9,6 +9,12 @@ export default function Banner() {
                     <div className="flex flex-row gap-4">
                         a
                         <div className="p-2 text-white bg-red-700 border-b-8 border-black rounded-xl border-5">
+                            UI/UX Designer
+                        </div>
+                    </div>
+                    <div className="flex flex-row gap-4 ml-4">
+                        &
+                        <div className="p-2 text-red-700 bg-white border-b-8 border-black rounded-xl border-5">
                             Frontend Developer
                         </div>
                     </div>
@@ -25,7 +31,6 @@ export default function Banner() {
                     className="z-10 col-start-3 col-end-13 row-start-4 mt-10 md:col-start-2 md:col-end-5 md:row-start-2 md:mt-0"
                 />
             </div>
-            <div id="about-me"></div>
         </div>
     )
 }

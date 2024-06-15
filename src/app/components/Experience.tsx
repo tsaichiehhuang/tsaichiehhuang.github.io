@@ -1,12 +1,12 @@
 export default function Experience() {
     const workData = [
-        {
-            company: '台北儀錶板黑客松 - 決賽',
-            title: '',
-            startDate: '2023/11',
-            endDate: '',
-            description: ['用 Vue.js加上主辦方規定的套件，在24小時內開發指定主題的儀表板圖表及地圖視覺化'],
-        },
+        // {
+        //     company: '台北儀錶板黑客松 - 決賽',
+        //     title: '',
+        //     startDate: '2023/11',
+        //     endDate: '',
+        //     description: ['用 Vue.js加上主辦方規定的套件，在24小時內開發指定主題的儀表板圖表及地圖視覺化'],
+        // },
         {
             company: '國立政治大學',
             title: ' 數位內容碩士學位學程',
@@ -24,13 +24,13 @@ export default function Experience() {
                 'API串接以及custom hook',
             ],
         },
-        {
-            company: 'Coding101 競賽 - 第三名',
-            title: '',
-            startDate: '2023/1',
-            endDate: '- 2023/3',
-            description: ['使用React.js開發量化交易策略平台', '兼任UI UX 設計'],
-        },
+        // {
+        //     company: 'Coding101 競賽 - 第三名',
+        //     title: '',
+        //     startDate: '2023/1',
+        //     endDate: '- 2023/3',
+        //     description: ['使用React.js開發量化交易策略平台', '兼任UI UX 設計'],
+        // },
         {
             company: '遠傳電信',
             title: '- Frontend Intern',
@@ -52,9 +52,14 @@ export default function Experience() {
         },
     ]
     return (
-        <div className="overflow-x-hidden bg-white " data-aos="fade-up" data-aos-offset="200">
+        <div
+            id="experience"
+            className="w-full overflow-x-hidden bg-white scroll-mt-10 flex flex-col items-center justify-center py-20"
+            data-aos="fade-up"
+            data-aos-offset="200"
+        >
             <div className="py-16 text-3xl font-bold text-center ">Experience</div>
-            <div className="flex flex-col items-center w-full md:grid md:grid-flow-row md:grid-cols-4 md:px-48">
+            <div className="w-3/4 flex flex-col items-center  md:grid md:grid-flow-row md:grid-cols-4 md:px-48">
                 {workData.map((item, index) => (
                     <div
                         key={index}
@@ -75,7 +80,6 @@ export default function Experience() {
                     </div>
                 ))}
             </div>
-            <div id="portfolio"></div>
         </div>
     )
 }

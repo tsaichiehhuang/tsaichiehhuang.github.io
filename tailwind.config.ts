@@ -13,6 +13,9 @@ const config: Config = {
             colors: {
                 'yellow-300': '#FCED35',
             },
+            aspectRatio: {
+                '4/3': '4 / 3',
+            },
         },
     },
     plugins: [nextui()],

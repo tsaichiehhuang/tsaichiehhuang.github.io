@@ -8,11 +8,12 @@ import Image from 'next/image'
 export default function Portfolio() {
     return (
         <div
+            id="portfolio"
             data-aos="fade-up"
             data-aos-offset="200"
-            className="box-content flex flex-col items-center justify-center w-full pb-56"
+            className="md:px-48 scroll-mt-40 box-content flex flex-col items-center justify-center w-full pb-56"
         >
-            <div className="w-4/5 ">
+            <div className="w-3/4 ">
                 <div className="col-span-1 py-20 text-3xl font-bold text-center md:col-span-3">Portfolio</div>
                 <div className="grid grid-flow-row grid-rows-3 gap-8 md:grid-rows-1 md:px-20 md:grid-cols-2">
                     <PortfolioItems
