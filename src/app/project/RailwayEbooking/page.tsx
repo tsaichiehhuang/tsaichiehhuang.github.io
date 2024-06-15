@@ -151,25 +151,30 @@ export default function RailwayEbooking() {
                         </div>
                         <div id="prototype" className="flex flex-col gap-4 scroll-mt-20">
                             <div className="text-4xl font-bold">原型</div>
-                            <div>*注意* 請使用電腦才能正常觀看</div>
+                            <div className=" hidden lg:block">*注意* 請使用電腦才能正常觀看</div>
+                            <div className=" lg:hidden block">
+                                手機或平板請點擊
+                                <a
+                                    className="text-red-700"
+                                    href="https://www.figma.com/proto/byyCL4uGCkI49fZPBqDHe0/%E4%BA%BA%E6%A9%9F%E4%BA%92%E5%8B%95%E4%BD%9C%E6%A5%AD?node-id=239-476&t=ERQiLgnQUNBDh6zB-1&scaling=scale-down&content-scaling=fixed&page-id=22%3A2&starting-point-node-id=239%3A476"
+                                >
+                                    連結
+                                </a>
+                                前往原型{' '}
+                            </div>
                             <iframe
                                 className=" hidden lg:block border-black border-1 rounded-xl"
                                 width="700"
                                 height="500"
                                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbyyCL4uGCkI49fZPBqDHe0%2F%25E4%25BA%25BA%25E6%25A9%259F%25E4%25BA%2592%25E5%258B%2595%25E4%25BD%259C%25E6%25A5%25AD%3Fnode-id%3D239-476%26t%3Di8FHbsRt7GcluNGa-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D22%253A2%26starting-point-node-id%3D239%253A476"
                             ></iframe>
-                            <iframe
-                                className="lg:hidden md:block border-black border-1 rounded-xl"
-                                width="500"
-                                height="500"
-                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbyyCL4uGCkI49fZPBqDHe0%2F%25E4%25BA%25BA%25E6%25A9%259F%25E4%25BA%2592%25E5%258B%2595%25E4%25BD%259C%25E6%25A5%25AD%3Fnode-id%3D239-476%26t%3Di8FHbsRt7GcluNGa-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D22%253A2%26starting-point-node-id%3D239%253A476"
-                            ></iframe>
-                            <iframe
+
+                            {/* <iframe
                                 className="border-black block md:hidden border-1 rounded-xl"
                                 width="300"
                                 height="695"
                                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbyyCL4uGCkI49fZPBqDHe0%2F%25E4%25BA%25BA%25E6%25A9%259F%25E4%25BA%2592%25E5%258B%2595%25E4%25BD%259C%25E6%25A5%25AD%3Fnode-id%3D239-476%26t%3Di8FHbsRt7GcluNGa-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D22%253A2%26starting-point-node-id%3D239%253A476"
-                            ></iframe>
+                            ></iframe> */}
                         </div>
                     </div>
                 </div>

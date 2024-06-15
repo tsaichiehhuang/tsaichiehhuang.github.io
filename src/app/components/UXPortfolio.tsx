@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { Button } from '@nextui-org/react'
+import { Button, Divider } from '@nextui-org/react'
 import ReactPlayer from 'react-player'
 import { BsGithub } from 'react-icons/bs'
 import Image from 'next/image'
@@ -59,10 +59,10 @@ const PortfolioItems = (props: PortfolioItemsProps) => {
     return (
         <div className="overflow-x-hidden">
             <div
-                className="flex flex-col md:flex-row items-center justify-start  bg-white border-b-8 border-black cursor-pointer border-5 hover:shadow-2xl rounded-xl"
+                className="h-full flex flex-col md:flex-row items-center justify-start  bg-white border-b-8 border-black cursor-pointer border-5 hover:shadow-2xl rounded-xl"
                 onClick={() => router.push(props.url)}
             >
-                <div className="h-full w-full md:w-1/3 lg:w-1/2 object-cover  ">
+                <div className="h-full w-full md:w-1/3 lg:w-1/2 object-cover bg-white ">
                     <Image
                         src={image}
                         alt={title}
@@ -73,9 +73,9 @@ const PortfolioItems = (props: PortfolioItemsProps) => {
                         priority
                     />
                 </div>
-                <div className=" text-left px-4 md:px-8 w-full  md:w-2/3 lg:w-1/2 gap-8 flex flex-col border-black  border-l-5">
+                <div className=" text-left px-4 md:px-8 w-full  md:w-2/3 lg:w-1/2 gap-8 flex flex-col ">
                     <div className="pt-4 text-2xl font-bold ">{title}</div>
-                    <div className="text-md  leading-6 text-gray-500 ">{description}</div>
+                    <div className="text-md  leading-6 text-gray-500 line-clamp-2">{description}</div>
                     <div className="flex flex-wrap gap-0.5  items-center justify-start">
                         {skills.map((skill: string, index: number) => (
                             <div key={index} className="px-1 text-xs text-gray-500 ">{`#${skill}`}</div>
